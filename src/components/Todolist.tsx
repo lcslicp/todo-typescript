@@ -5,7 +5,7 @@ import { TodoModel } from '../models/todoModel';
 
 interface props {
   todolist: Array<TodoModel>;
-  setTodolist: React.Dispatch<React.SetStateAction<TodoModel[]>>;
+  setTodolist: React.Dispatch<React.SetStateAction<Array<TodoModel>>>;
 }
 
 const Todolist: React.FC<props> = ({
@@ -19,6 +19,8 @@ const Todolist: React.FC<props> = ({
         index={index}
         key={todo.id}
         todo={todo.todo}
+        todolist={todolist}
+        setTodolist={setTodolist}
         />
       ))}
     </section>

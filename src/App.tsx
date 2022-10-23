@@ -23,7 +23,8 @@ export const App: React.FC = () => {
       <InputField
       todo={todo}
       setTodo={setTodo}
-      handleAdd={handleAdd} />
+      handleAdd={handleAdd}
+       />
       <Todolist
       todolist={todolist}
       setTodolist={setTodolist}
